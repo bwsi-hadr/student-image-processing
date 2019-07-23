@@ -2,3 +2,4 @@
 *_NDVI.jpg
 __pycache__
 static/*.jpg
+.ipynb_checkpoints/
