@@ -18,4 +18,9 @@ except:
 import gdal
 import numpy as np
 import matplotlib
+<<<<<<< HEAD
 import matplotlib.pyplot as plt
+#dylan tf u so gay for though
+=======
+import matplotlib.pyplot as plt
+>>>>>>> ec3a47e071b5d7f08b9b68d1684a5af2677d64a1
