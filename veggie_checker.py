@@ -19,5 +19,4 @@ import gdal
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
-
-# test test test
+#dylan tf u so gay for though
