@@ -1,4 +1,5 @@
 import numpy as np
+from PIL import Image
 
 def analyzeimage(old_image):
 	# analyze the image 'old_image' here
@@ -11,4 +12,6 @@ def analyzeimage(old_image):
 
 	img = np.array(Image.open(old_image))
 
-    return "static/temp.jpg"
+	return img
+
+print(analyzeimage('images/wallplants.jpg'))
