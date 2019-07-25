@@ -4,7 +4,8 @@ from PIL import Image
 
 cv.startWindowThread()
 
-img = cv.imread('images/wallplants.jpg')
+img = Image.open('images/wallplants.jpg')
+img = np.array(img)
 ir, ir_n_g, ir_n_r = cv.split(img)
 
 ndvi = (ir + ir - ir_n_r)/(ir_n_r)
