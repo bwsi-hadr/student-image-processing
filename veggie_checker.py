@@ -4,11 +4,14 @@ from PIL import Image
 
 cv.startWindowThread()
 
-img = Image.open('images/wallplants.jpg')
+img = Image.open('images/tree.jpg')
 img = np.array(img)
 ir, ir_n_g, ir_n_r = cv.split(img)
 
-ndvi = (ir + ir - ir_n_r)/(ir_n_r)
+bottom = ir_n_r.astype(float)
+bottom[bottom == 0] = 0.01
+
+ndvi = ((ir + ir).astype(float) - ir_n_r)/(bottom)
 
 cv.imshow('', ndvi)
 cv.waitKey()
