@@ -1,11 +1,14 @@
 import cv2 as cv
 import numpy as np
 
-cv.startWindowThread()
+# cv.startWindowThread()
 
-img = cv.imread('tree.jpg')
-edges = cv.Canny(img, 100, 200) # (image, lower pixel value, higher pixel value)
+img = cv.imread('images/tush.jpg')
+edges = cv.Canny(img, 50, 100) # (image, lower pixel value, higher pixel value)
 
-cv.imshow('', edges)
-cv.waitKey()
+while True:
+    cv.imshow('', edges)
+    if cv.waitKey(0) == ord('q'):
+        break
 cv.destroyAllWindows()
+

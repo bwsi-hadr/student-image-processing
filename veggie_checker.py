@@ -4,7 +4,7 @@ from PIL import Image
 
 cv.startWindowThread()
 
-img = Image.open('images/tree.jpg')
+img = Image.open('images/tush.jpg')
 img = np.array(img)
 ir, ir_n_g, ir_n_r = cv.split(img)
 
